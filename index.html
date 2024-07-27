@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style>
+			.header {
+				padding-top: 50px;
+				text-align: center;
+				vertical-align: middle;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<div class="header">
+			
+				<a href="http://yahoo.com" onclick="window.open('http://google.com');
+return true;" target="_blank">Link to open two tabs (without using JavaScript)</a>
+				<br><br><br>
+				<a id="link" href="#" onclick="openTabs()">Link to open two tubs (with using JavaScript)</a>
+				
+				<script>
+					function openTabs() {
+						window.open('https://www.google.com', '_blank'); // Первая ссылка
+						window.open('https://yahoo.com', '_blank'); // Вторая ссылка
+					}
+				</script>
+				
+				<br><br><br>
+				***** WORKS IF POP-UPS ARE ALLOWED ON THE SITE *****
+			</div>
+		</header>		
+	</body>
+</html>
